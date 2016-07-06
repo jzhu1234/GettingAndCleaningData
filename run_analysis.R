@@ -4,11 +4,9 @@ library(dplyr)
 
 #Store Old Working Directory
 old <- getwd()
-<<<<<<< HEAD
-setwd("UCI HAR Dataset/")
-=======
 
->>>>>>> 763aab57e0f6718ad49e4f2cab9ef873c35ebbdf
+setwd("UCI HAR Dataset/")
+
 ## Open and read necessary files
 setwd("test/")
 temp = list.files(pattern="*.txt")
@@ -26,11 +24,7 @@ merged.data <- cbind(merged.data,temp)
 names(merged.data) = c("subject","activityNames")
 temp <- rbind(trainfiles[[2]],testfiles[[2]])
 merged.data <- cbind(merged.data,temp)
-<<<<<<< HEAD
 setwd("..")
-=======
-setwd(old)
->>>>>>> 763aab57e0f6718ad49e4f2cab9ef873c35ebbdf
 
 ## Extract mean and std
 features <- read.table("features.txt",stringsAsFactors = FALSE)
@@ -64,14 +58,10 @@ for (i in 1:sublen){
   }
 }
 
-<<<<<<< HEAD
 setwd(old)
 
 write.table(merged.data,"mergeddata.txt")
 write.table(tidy.data,"tidydata.txt")
-
-=======
->>>>>>> 763aab57e0f6718ad49e4f2cab9ef873c35ebbdf
 
 
 
