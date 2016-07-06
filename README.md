@@ -18,9 +18,17 @@ You should create one R script called run_analysis.R that does the following.
 4. Appropriately labels the data set with descriptive variable names.
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-## Data Sets
+## Project Checklist
 ### mergeddata.txt
-The first data set. It contains the tidy data set which is created by the first four steps of the project.
+The first data set, which is created by the first four steps of the project.
 
 ### tidydata.txt
-The second data set created by the fifth step.
+A second, independent tidy data set with the average of each variable for each activity and each subject.
+
+### CodeBook.md
+A code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md.
+
+### README.md
+The README that explains the analysis files is clear and understandable.
+
+
